@@ -1,238 +1,79 @@
-{
-  "name": "Midnight Wolf",
-  "description": "Premium wolf-inspired AMOLED theme with custom wallpaper.",
-  "version": "2.0",
-  "authors": [
-    {
-      "name": "Mohamed",
-      "id": "0"
-    }
-  ],
-  "spec": 2,
+/**
+ * @name Sleeping Cat
+ * @author ChatGPT
+ * @version 1.0
+ * @description Black minimalist sleeping cat theme
+ */
 
-  "semanticColors": {
-    "ANDROID_RIPPLE": ["#7A7A7A"],
-    "CONTEXT_MENU_BACKDROP_BACKGROUND": ["#000000CC"],
-    "CHAT_BACKGROUND": ["#050505"],
-    "BACKGROUND_ACCENT": ["#171717"],
-    "BACKGROUND_FLOATING": ["#111111"],
-    "BACKGROUND_MENTIONED": ["#BFBFBF22"],
-    "BACKGROUND_MENTIONED_HOVER": ["#FFFFFF33"],
+@import url("https://refact0r.github.io/system24/build/system24.css");
 
-    "SCROLLBAR_THIN_THUMB": ["#707070"],
-    "SCROLLBAR_THIN_TRACK": ["transparent"],
-    "SCROLLBAR_AUTO_THUMB": ["#707070"],
-    "SCROLLBAR_AUTO_TRACK": ["transparent"],
+:root {
+    --bg: #000000;
+    --bg-secondary: #080808;
+    --bg-tertiary: #101010;
 
-    "CHANNELTEXTAREA_BACKGROUND": ["#141414"],
+    --text: #ffffff;
+    --text-muted: #9d9d9d;
 
-    "REDESIGN_ACTIVITY_CARD_BACKGROUND": ["#141414"],
-    "REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED": ["#222222"],
+    --accent: #ffffff;
+    --accent-hover: #d8d8d8;
 
-    "CHANNELS_DEFAULT": ["#DDDDDD"],
+    --border: #222222;
 
-    "BACKGROUND_MESSAGE_HOVER": ["#FFFFFF10"],
-    "BACKGROUND_NESTED_FLOATING": ["#141414"],
+    /* Replace this with your image URL */
+    --background-image: url("YOUR_IMAGE_URL");
 
-    "BACKGROUND_MOBILE_PRIMARY": ["#050505"],
-    "BACKGROUND_MOBILE_SECONDARY": ["#101010"],
+    --background-blur: 0px;
+    --background-brightness: 0.3;
+}
 
-    "BACKGROUND_MODIFIER_ACCENT": ["#FFFFFF10"],
-    "BACKGROUND_MODIFIER_ACTIVE": ["#FFFFFF18"],
-    "BACKGROUND_MODIFIER_HOVER": ["#FFFFFF10"],
-    "BACKGROUND_MODIFIER_SELECTED": ["#FFFFFF20"],
+/* Background */
+.appMount-2yBXZl,
+.bg-1QIAus {
+    background: var(--bg) !important;
+    background-image: var(--background-image) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 260px;
+}
 
-    "BACKGROUND_PRIMARY": ["#050505"],
-    "BACKGROUND_SECONDARY": ["#0E0E0E"],
-    "BACKGROUND_SECONDARY_ALT": ["#141414"],
-    "BACKGROUND_TERTIARY": ["#1D1D1D"],
+/* Chat */
+.chat-2ZfjoI,
+.container-2cd8Mz {
+    background: rgba(0,0,0,.82) !important;
+}
 
-    "BG_BASE_PRIMARY": ["#050505"],
-    "BG_BASE_SECONDARY": ["#0E0E0E"],
-    "BG_BASE_TERTIARY": ["#141414"],
+/* Sidebar */
+.sidebar-1tnWFu {
+    background: #050505 !important;
+}
 
-    "BG_BACKDROP": ["#000000B3"],
+/* Member list */
+.membersWrap-3NUR2t,
+.members-3WRCEx {
+    background: #050505 !important;
+}
 
-    "HOME_BACKGROUND": ["#0B0B0B"],
+/* Messages */
+.message-2CShn3:hover {
+    background: rgba(255,255,255,.03);
+}
 
-    "BORDER_FAINT": ["#3C3C3C"],
-    "BORDER_STRONG": ["#707070"],
-    "BORDER_SUBTLE": ["#2A2A2A"],
+/* Buttons */
+.button-f2h6uQ {
+    border-radius: 10px;
+    transition: .2s;
+}
 
-    "CARD_PRIMARY_BG": ["#141414"],
-    "CARD_SECONDARY_BG": ["#101010"],
+.button-f2h6uQ:hover {
+    box-shadow: 0 0 12px rgba(255,255,255,.25);
+}
 
-    "CHANNEL_ICON": ["#D7D7D7"],
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
 
-    "EMBED_BACKGROUND": ["#101010"],
-
-    "HEADER_PRIMARY": ["#FFFFFF"],
-    "HEADER_SECONDARY": ["#CFCFCF"],
-
-    "INTERACTIVE_ACTIVE": ["#FFFFFF"],
-    "INTERACTIVE_HOVER": ["#EAEAEA"],
-    "INTERACTIVE_MUTED": ["#888888"],
-    "INTERACTIVE_NORMAL": ["#D8D8D8"],
-
-    "MENTION_BACKGROUND": ["#FFFFFF18"],
-    "MENTION_FOREGROUND": ["#FFFFFF"],
-
-    "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": ["#1A1A1A"],
-    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": ["#121212"],
-    "REDESIGN_BUTTON_SECONDARY_BORDER": ["#5A5A5A"],
-
-    "REDESIGN_BUTTON_DANGER_BACKGROUND": ["#C83D3D"],
-
-    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": ["#BEBEBE"],
-    "REDESIGN_CHANNEL_NAME_TEXT": ["#F2F2F2"],
-
-    "REDESIGN_CHAT_INPUT_BACKGROUND": ["#121212"],
-
-    "SPOILER_HIDDEN_BACKGROUND": ["#202020"],
-
-    "STATUS_DANGER": ["#D94A4A"],
-    "STATUS_DANGER_BACKGROUND": ["#D94A4A"],
-    "STATUS_DANGER_TEXT": ["#FFFFFF"],
-
-    "TEXT_LINK": ["#EAEAEA"],
-    "TEXT_MUTED": ["#999999"],
-    "TEXT_NORMAL": ["#FFFFFF"],
-    "TEXT_PRIMARY": ["#FFFFFF"],
-    "TEXT_SECONDARY": ["#D6D6D6"],
-
-    "KEYBOARD": ["#050505"],
-
-    "PANEL_BG": ["#111111"],
-
-    "BACKGROUND_BASE_LOWEST": ["#050505"]
-  },
-    "rawColors": {
-    "BLUE_260": "#BFBFBF",
-    "BLUE_300": "#A8A8A8",
-    "BLUE_330": "#8C8C8C",
-    "BLUE_345": "#FFFFFF",
-    "BLUE_360": "#666666",
-    "BLUE_400": "#5A5A5A",
-    "BLUE_430": "#444444",
-    "BLUE_460": "#2F2F2F",
-    "BLUE_500": "#242424",
-    "BLUE_530": "#1A1A1A",
-    "BLUE_560": "#111111",
-    "BLUE_600": "#0B0B0B",
-    "BLUE_630": "#080808",
-    "BLUE_660": "#050505",
-    "BLUE_700": "#000000",
-
-    "BRAND_200": "#F5F5F5",
-    "BRAND_260": "#E8E8E8",
-    "BRAND_300": "#DADADA",
-    "BRAND_330": "#C8C8C8",
-    "BRAND_345": "#FFFFFF",
-    "BRAND_360": "#BDBDBD",
-    "BRAND_400": "#9E9E9E",
-    "BRAND_430": "#7A7A7A",
-    "BRAND_460": "#5F5F5F",
-    "BRAND_500": "#4B4B4B",
-    "BRAND_530": "#383838",
-    "BRAND_560": "#252525",
-    "BRAND_600": "#191919",
-    "BRAND_630": "#101010",
-    "BRAND_660": "#080808",
-    "BRAND_700": "#050505",
-    "BRAND_730": "#000000",
-
-    "PRIMARY_100": "#FFFFFF",
-    "PRIMARY_200": "#F4F4F4",
-    "PRIMARY_300": "#E7E7E7",
-    "PRIMARY_330": "#D8D8D8",
-    "PRIMARY_360": "#C7C7C7",
-     "fonts": {
-    "ABCGintoNord-ExtraBold": "https://github.com/Quinxxxx/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
-    "ggsans-Bold": "https://github.com/Quinxxxx/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
-    "ggsans-BoldItalic": "https://github.com/Quinxxxx/Meloso/blob/main/Meloso-BoldItalic.ttf?raw=1",
-    "ggsans-ExtraBold": "https://github.com/Quinxxxx/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
-    "ggsans-ExtraBoldItalic": "https://github.com/Quinxxxx/Meloso/blob/main/Meloso-BoldItalic.ttf?raw=1",
-    "ggsans-Medium": "https://github.com/VodkaXMartini/images/raw/main/Roboto-Regular.ttf?raw=1",
-    "ggsans-MediumItalic": "
-         "effects": {
-    "glassmorphism": true,
-    "glassBlur": 1.2,
-    "glassOpacity": 0.55,
-    "amoled": true
-  },
-
-  "theme": {
-    "sidebarOpacity": 0.72,
-    "chatOpacity": 0.68,
-    "memberListOpacity": 0.72,
-    "channelListOpacity": 0.72,
-    "modalOpacity": 0.86,
-    "popoverOpacity": 0.86,
-
-    "roundness": {
-      "small": 8,
-      "medium": 12,
-      "large": 18
-    },
-
-    "shadows": {
-      "enabled": true,
-      "strength": 0.55
-    }
-  },
-
-  "extras": {
-    "transparentChat": true,
-    "transparentSidebar": true,
-    "transparentMembers": true,
-    "transparentSettings": true,
-    "transparentModals": true,
-
-     "ui": {
-    "accentColor": "#FFFFFF",
-    "secondaryAccent": "#A8A8A8",
-    "tertiaryAccent": "#5A5A5A",
-
-    "messageHoverOpacity": 0.08,
-    "replyLineColor": "#FFFFFF",
-    "mentionLineColor": "#FFFFFF",
-
-    "buttonRadius": 14,
-    "cardRadius": 18,
-    "modalRadius": 22,
-
-    "sidebarBlur": 1.3,
-    "memberBlur": 1.3,
-    "chatBlur": 1.2,
-
-    "glass": true,
-    "transparentGuilds": true,
-    "transparentChannels": true,
-    "transparentMembers": true,
-    "transparentProfile": true,
-    "transparentSettings": true
-  },
-
-  "animations": {
-    "enabled": true,
-    "speed": 1.0,
-    "smoothScrolling": true,
-    "smoothHover": true,
-    "smoothTransitions": true
-  },
-
-  "wolf": {
-    "themeName": "Midnight Wolf",
-    "style": "AMOLED",
-    "accent": "Silver",
-    "wallpaper": "https://raw.githubusercontent.com/mamaalib860-prog/wolf/main/8d337109288f16d19d45e098d16f3b22.jpg",
-    "overlayOpacity": 0.45,
-    "overlayColor": "#000000"
-  },
-      "credits": {
-    "theme": "Midnight Wolf",
-    "creator": "Mohamed",
-    "inspiredBy": "Wolf Wallpaper",
-    "generatedWith": "ChatGPT"
-  }
-  }
+::-webkit-scrollbar-track {
+    background: transparent;
+}
