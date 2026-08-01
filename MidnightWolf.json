@@ -1,0 +1,55 @@
+{
+  "name": "Midnight Wolf",
+  "description": "AMOLED black wolf-inspired theme with custom wallpaper.",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Mohamed",
+      "id": "0"
+    }
+  ],
+  "spec": 2,
+
+  "semanticColors": {
+    "CHAT_BACKGROUND": ["#090909"],
+    "BACKGROUND_PRIMARY": ["#090909"],
+    "BACKGROUND_SECONDARY": ["#111111"],
+    "BACKGROUND_SECONDARY_ALT": ["#151515"],
+    "BACKGROUND_TERTIARY": ["#1d1d1d"],
+    "BACKGROUND_FLOATING": ["#151515"],
+    "BACKGROUND_MOBILE_PRIMARY": ["#090909"],
+    "BACKGROUND_MOBILE_SECONDARY": ["#111111"],
+    "CHANNELTEXTAREA_BACKGROUND": ["#151515"],
+
+    "HEADER_PRIMARY": ["#FFFFFF"],
+    "HEADER_SECONDARY": ["#CFCFCF"],
+
+    "TEXT_NORMAL": ["#FFFFFF"],
+    "TEXT_PRIMARY": ["#FFFFFF"],
+    "TEXT_SECONDARY": ["#D0D0D0"],
+    "TEXT_MUTED": ["#8F8F8F"],
+
+    "INTERACTIVE_NORMAL": ["#D0D0D0"],
+    "INTERACTIVE_HOVER": ["#FFFFFF"],
+    "INTERACTIVE_ACTIVE": ["#FFFFFF"],
+    "INTERACTIVE_MUTED": ["#6F6F6F"],
+
+    "BRAND_500": ["#BFBFBF"],
+    "STATUS_DANGER": ["#E14A4A"]
+  },
+
+  "rawColors": {},
+
+  "plus": {
+    "version": 0,
+    "backgroundImageUrl": "https://raw.githubusercontent.com/mamaalib860-prog/wolf/main/8d337109288f16d19d45e098d16f3b22.jpg",
+    "backgroundAlpha": 0.35,
+    "blur": 0.8
+  },
+
+  "background": {
+    "url": "https://raw.githubusercontent.com/mamaalib860-prog/wolf/main/8d337109288f16d19d45e098d16f3b22.jpg",
+    "alpha": 0.35,
+    "blur": 0.8
+  }
+}
